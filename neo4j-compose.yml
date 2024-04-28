@@ -1,0 +1,15 @@
+services:
+ 
+  neo4j:
+    image: neo4j:4.4.32
+    container_name: neo4j
+    volumes:
+     - ${DOCKER_VOLUME_DIRECTORY:-.}/volumes/neo4j/data:/data:rw
+     - ${DOCKER_VOLUME_DIRECTORY:-.}/volumes/neo4j/logs:/logs:rw
+     - ${DOCKER_VOLUME_DIRECTORY:-.}/volumes/neo4j/conf:/var/lib/neo4j/conf:rw
+     - ${DOCKER_VOLUME_DIRECTORY:-.}/volumes/neo4j/plugins:/plugins
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    environment:
+      - NEO4J_AUTH=neo4j/neo4j123
