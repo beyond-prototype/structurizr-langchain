@@ -118,6 +118,8 @@ https://python.langchain.com/docs/use_cases/graph/
 
 https://python.langchain.com/docs/integrations/graphs/neo4j_cypher/
 
-https://python.langchain.com/docs/use_cases/graph/prompting/#setup
+https://python.langchain.com/docs/use_cases/graph/prompting
+
+https://python.langchain.com/docs/use_cases/graph/semantic/
 
 https://python.langchain.com/docs/integrations/vectorstores/neo4jvector/
