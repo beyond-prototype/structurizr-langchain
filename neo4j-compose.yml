@@ -1,13 +1,13 @@
 services:
- 
-  neo4j:
-    image: neo4j:4.4.32
-    container_name: neo4j
+
+  neo4j5:
+    image: neo4j:5.19.0
+    container_name: neo4j5
     volumes:
-     - ${DOCKER_VOLUME_DIRECTORY:-.}/volumes/neo4j/data:/data:rw
-     - ${DOCKER_VOLUME_DIRECTORY:-.}/volumes/neo4j/logs:/logs:rw
-     - ${DOCKER_VOLUME_DIRECTORY:-.}/volumes/neo4j/conf:/var/lib/neo4j/conf:rw
-     - ${DOCKER_VOLUME_DIRECTORY:-.}/volumes/neo4j/plugins:/plugins
+     - ${DOCKER_VOLUME_DIRECTORY:-.}/volumes/neo4j5/data:/data:rw
+     - ${DOCKER_VOLUME_DIRECTORY:-.}/volumes/neo4j5/logs:/logs:rw
+     - ${DOCKER_VOLUME_DIRECTORY:-.}/volumes/neo4j5/conf:/var/lib/neo4j/conf:rw
+     - ${DOCKER_VOLUME_DIRECTORY:-.}/volumes/neo4j5/plugins:/plugins
     ports:
       - "7474:7474"
       - "7687:7687"
