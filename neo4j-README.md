@@ -157,3 +157,14 @@ This is the compatible version of APOC plugin for Neo4j 4.4.x used in this proje
         }
     }
 ```
+
+### Cypher SQL
+
+Show Indexes
+
+```sql
+SHOW INDEXES YIELD name, type, entityType, labelsOrTypes, properties, options 
+WHERE type = 'VECTOR' 
+RETURN name, entityType, labelsOrTypes, properties, options
+```
+
